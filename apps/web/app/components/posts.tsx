@@ -4,6 +4,12 @@ import { formatDate, getBlogPosts } from 'app/blog/utils'
 export function BlogPosts() {
   let allBlogs = getBlogPosts()
 
+  if (allBlogs.length === 0) {
+    return (
+      <p className="text-neutral-600 dark:text-neutral-400">No posts yet.</p>
+    )
+  }
+
   return (
     <div>
       {allBlogs

@@ -3,7 +3,7 @@
 // nav and the footer link to SOURCE_URL. A product built from this baseline
 // gets both rewritten to its own name and repository at instantiation, so
 // keep them literal and on one line each.
-export const SITE_NAME = "Portfolio"
+export const SITE_NAME = "Vijayakrishnan Kartha Suresh"
 export const SOURCE_URL = "https://github.com/vijayakrishnans/portfolio"
 
 // For text placed inside XML (the RSS feed): a site name may carry `&` or `'`.
