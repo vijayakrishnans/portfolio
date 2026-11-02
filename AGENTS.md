@@ -32,7 +32,8 @@ pnpm --filter @app/web dev        # http://localhost:3000
 ```
 
 A post is `apps/web/app/blog/posts/<slug>.mdx` with front matter `title`,
-`publishedAt` and `summary`. The home page is `apps/web/app/page.tsx`.
+`publishedAt` and `summary`. The home page is `apps/web/app/page.tsx`, and its content is
+`apps/web/app/resume.ts`.
 
 ## How a change lands
 

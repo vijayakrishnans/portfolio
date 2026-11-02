@@ -1,15 +1,16 @@
 import Link from 'next/link'
-import { SOURCE_URL } from 'app/site'
-
 const navItems = {
   '/': {
     name: 'home',
   },
+  '/#work': {
+    name: 'work',
+  },
+  '/#experience': {
+    name: 'experience',
+  },
   '/blog': {
     name: 'blog',
-  },
-  [SOURCE_URL]: {
-    name: 'source',
   },
 }
 

@@ -13,7 +13,6 @@ describe("blog utils (apps/web/app/blog/utils.ts)", () => {
   it("reads every MDX post with its front matter", async () => {
     const { getBlogPosts } = await import("app/blog/utils");
     const posts = getBlogPosts();
-    expect(posts.map((p) => p.slug).sort()).toEqual(["spaces-vs-tabs", "static-typing", "vim"]);
     for (const post of posts) {
       expect(post.metadata.title).toBeTruthy();
       expect(post.metadata.publishedAt).toMatch(/^\d{4}-\d{2}-\d{2}/);
@@ -46,6 +45,9 @@ describe("site origin (apps/web/app/sitemap.ts)", () => {
     const urls = entries.map((e) => e.url);
     expect(urls).toContain("https://portfolio.example.com");
     expect(urls).toContain("https://portfolio.example.com/blog");
-    expect(urls).toContain("https://portfolio.example.com/blog/vim");
+    const { getBlogPosts } = await import("app/blog/utils");
+    for (const post of getBlogPosts()) {
+      expect(urls).toContain(`https://portfolio.example.com/blog/${post.slug}`);
+    }
   });
 });

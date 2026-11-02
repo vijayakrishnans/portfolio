@@ -35,7 +35,7 @@ export async function GET() {
     <channel>
         <title>${escapeXml(SITE_NAME)}</title>
         <link>${baseUrl}</link>
-        <description>This is my portfolio RSS feed</description>
+        <description>Writing by Vijayakrishnan Kartha Suresh</description>
         ${itemsXml}
     </channel>
   </rss>`
