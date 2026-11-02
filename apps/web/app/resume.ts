@@ -11,7 +11,7 @@ export const profile = {
     'I fine-tuned and deployed a production Malayalam LLM, built RAG and voice-agent prototypes, and packaged LLM components for reuse across client projects. I hold an MSc in IT Security, with a working focus on AI governance, data privacy and secure deployment.',
   ],
   links: [
-    { label: 'Email', href: 'mailto:vijayakrishnan12994@gmail.com' },
+    { label: 'Email', href: 'mailto:vijayakrishnankartha@gmail.com' },
     { label: 'LinkedIn', href: 'https://linkedin.com/in/atomicflee' },
     { label: 'GitHub', href: 'https://github.com/vijayakrishnans' },
     { label: 'Hugging Face', href: 'https://huggingface.co/spaces/Atomicflee/unni' },
@@ -32,20 +32,6 @@ export const projects: {
       'A QLoRA fine-tune of Gemma 4 E4B: curated dataset, about 21 hours of training with measurable improvement on Manglish handling, and a live Gradio demo with a data-logging pipeline for monitoring and continuous improvement.',
     tags: ['QLoRA', 'Unsloth', 'Gemma 4', 'Gradio'],
     link: { label: 'Try the demo', href: 'https://huggingface.co/spaces/Atomicflee/unni' },
-  },
-  {
-    name: 'Survival Scan',
-    kind: 'Security scanner, Orunbase',
-    description:
-      'A security scanner for AI-generated (vibe-coded) apps that detects leaked keys and secrets in deployed bundles and source maps.',
-    tags: ['Security', 'Secrets detection'],
-  },
-  {
-    name: 'Migration recon pipeline',
-    kind: 'Platform tooling, Orunbase',
-    description:
-      'Analyses the bundles, source maps and HAR captures of a deployed app to auto-generate an orun baseline and migration plan.',
-    tags: ['Migrations', 'Static analysis'],
   },
   {
     name: 'Voice booking agent',
@@ -92,8 +78,10 @@ export const experience: {
     period: 'Oct 2026 – Present',
     points: [
       'Founding engineer at an open-source developer platform (orun CLI) giving startups a Vercel-grade deployment baseline on any cloud.',
-      'Lead the partner programme, baselines and registry, and customer migrations from Vercel, Lovable, Base44 and Emergent to production.',
-      'Elicit customer requirements, run gap analysis and turn findings into prioritised product fixes.',
+      'Quality testing across the platform and its baselines.',
+      'Build baselines, the complete product repositories the platform rebuilds for its users.',
+      'Build products for Open Product on Orunbase.',
+      'Market research and marketing.',
     ],
   },
   {
